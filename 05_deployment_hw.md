@@ -1,11 +1,18 @@
 #	Question	            Answer
+
+
 1	uv version	            0.13.5
+
 2	Scikit-Learn version	1.7.2
+
 3	Conversion probability 
     (loaded model)	        0.533
+
 4	Conversion probability 
     (API)	                0.770
+
 5	Python base image	    python:3.11.15-slim-bookworm
+
 
 Setup and checks
 uv --version -> uv 0.13.5
@@ -13,6 +20,7 @@ uv --version -> uv 0.13.5
 uv sync --locked -> installed 18 packages using CPython 3.11.15, including scikit-learn==1.7.2
 
 uv run python smoke_test.py -> {'conversion_probability': 0.769799, 'conversion': True}
+
 Checksum of pipeline.bin (SHA256) matches the expected value: 1646bbdcd38d4f044da6b630c5b332c93a314245a8c21929011c42de51f629f1
 
 Question 3: load the model
@@ -32,6 +40,7 @@ json
 }
 
 Run with uv run python q3.py. 
+
 Output: 0.533
 
 Question 4: serve the model
@@ -54,5 +63,5 @@ Rounded to three decimals: 0.770
 
 Question 5: container configuration
 
-The Dockerfile declares the base image python:3.11.15-slim-bookworm
+The Dockerfile declares the base image python : 3.11.15-slim-bookworm
 
