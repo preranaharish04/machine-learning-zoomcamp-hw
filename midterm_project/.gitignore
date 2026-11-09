@@ -1,0 +1,38 @@
+# Raw data files (too large for git)
+Data/time_series_60min_singleindex.csv
+Data/open_meteo_weather.csv
+
+# Model binary
+dunkelflaute_model.bin
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+
+*.csv
+*.zip
+opsd-*/
+Data/

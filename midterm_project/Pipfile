@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+lightgbm = "*"
+xgboost = "*"
+matplotlib = "*"
+seaborn = "*"
+flask = "*"
+gunicorn = {version = "*", markers = "sys_platform != 'win32'"}
+waitress = {version = "*", markers = "sys_platform == 'win32'"}
+
+[dev-packages]
+jupyter = "*"
+ipykernel = "*"
+
+[requires]
+python_version = "3.13"
