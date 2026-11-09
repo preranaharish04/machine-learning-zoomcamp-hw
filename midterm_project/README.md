@@ -34,6 +34,18 @@ dunkelflaute-predictor/
 ├── train.py              # Production training pipeline
 └── predict.py            # Flask model-serving microservice
 ```
+## 📊 Dataset Access & Reproducibility
+
+To maintain a clean repository footprint, the heavy raw datasets are hosted externally. You can access and download the exact historical source files used to train and validate this model here:
+
+*   **Google Drive Data Repository:** [Download Project Datasets (Google Drive) 🌐] https://drive.google.com/drive/folders/1jFir3GnEgczzHK1XOgdk6i30J4lwqAN5?usp=sharing
+
+### Dataset Contents:
+1.  `time_series_60min_singleindex.csv` — Raw hourly consumption load, solar generation, and wind generation profiles for Germany (extracted via Open Power System Data).
+2.  `open_meteo_weather.csv` — Hourly historical weather parameters (100m wind speeds, direct/diffuse radiation matrices) corresponding to the exact grid target timeline (extracted via Open-Meteo ERA5 API).
+
+To replicate the execution pipeline, download these files and place them directly into the `/Data` directory within your local workspace root before executing `notebook.ipynb` or `train.py`.
+
 
 ## Setup & Execution Instructions
 
